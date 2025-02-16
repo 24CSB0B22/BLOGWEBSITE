@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <style>
+        body {
+            background-image: url("background image.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            color: white;
+        }
+        .categories-container {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .category {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            font-style: italic;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        .category:hover {
+            transform: scale(1.2);
+            filter: brightness(1.2);
+        }
+        .category img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        .category-1 { background-color: #ff5733; }
+        .category-2 { background-color: #33b5e5; }
+        .category-3 { background-color: #ffcc00; }
+        .category-4 { background-color: #4caf50; }
+        .description-container {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin-top: 20px;
+        }
+        .description {
+            font-style: italic;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Inspired Rooms</h1>
+    <div class="description-container">
+        <p class="description">An inspired room should have a well-thought-out design, comfortable furniture, aesthetic decor, and functional spaces. Each room serves a unique purpose and should reflect the personality and lifestyle of its inhabitants. A well-designed living room fosters social interactions, a kitchen should be practical and inviting, a bedroom must be cozy and restful, and an office should be a productive and motivating space.</p>
+    </div>
+    <div class="categories-container">
+        <div class="category category-1">
+            <img src="living room.jpeg" alt="Living Room">
+            Living
+        </div>
+        <div class="category category-2">
+            <img src="kitchen.jpeg" alt="Kitchen">
+            Kitchen
+        </div>
+        <div class="category category-3">
+            <img src="bed room.jpeg" alt="Bedroom">
+            Bedroom
+        </div>
+        <div class="category category-4">
+            <img src="office room.jpeg" alt="Office">
+            Office
+        </div>
+    </div>
+</body>
+</html>
